@@ -41,7 +41,7 @@ br {
   float: right;
   width: 75%;
   height: 35px;
-  background-image: linear-gradient(45deg, red, blue);
+  background-color: white;
 }
 .nav {
   overflow: hidden;
@@ -55,7 +55,7 @@ br {
 }
 .farmRoom {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: white;
   background-color: #282c34;
 }
@@ -74,13 +74,10 @@ br {
   color: #61dafb;
 }
 .br {
-  border-color: #282c34;
-  border-style: outset;
   width: 100%;
   height: 25px;
-  background-image: linear-gradient(45deg, red, blue);
+  background-color: #373c4e;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -114,7 +111,7 @@ br {
   height: 35%;
   text-align: center;
 }
-.button {
+button {
   border-radius: 10px;
 
   transition: 1s;
@@ -124,7 +121,7 @@ br {
   background: #373c4e;
   border: none;
 }
-.button:hover {
+button:hover {
   font-size: x-large;
 
   border-radius: 50px;
