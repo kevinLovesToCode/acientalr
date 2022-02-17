@@ -16,7 +16,7 @@
   }
 }
 .lo {
-  margin-top: 50px;
+  margin-top: 65px;
 }
 img {
   display: inline-block;
@@ -53,7 +53,13 @@ br {
   background-color: #282c34;
   height: 100vh;
 }
-.farmRoom {
+.farmRoomLight {
+  width: 100%;
+  height: 100%;
+  color: black;
+  background-color: white;
+}
+.farmRoomDark {
   width: 100%;
   height: 100%;
   color: white;
@@ -89,7 +95,16 @@ br {
     transform: rotate(360deg);
   }
 }
-.home {
+.homeLight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.homeDark {
   display: flex;
   align-items: center;
   justify-content: center;
