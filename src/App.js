@@ -312,13 +312,23 @@ const Military = ({ isDark }) => {
             </p>
             <div className="br"></div>
             <div className="title">
-              <h5>Body Armour</h5>
+              <div className="title">
+                <h5>Body Armour</h5>
+              </div>
+              <p className="content">
+                During the time of inovating the Body Armour it was the Assyrian
+                Empire, which is still considered in Acient Mesopotamia, The
+                first helemts was called Conical helmet, it was made in the 8th
+                century BC. It is used by the Assyrians, the helmet is described
+                to have a calotte helmet that rises to a point above the head.
+                and was made mostly of iron due to the cheap cost. it also has a
+                little bit of bronze on the bottom. Later the Cuirass was also
+                invented as a type of body armour. The name of it is called
+                Laminar Armour
+                <img src={require("./Assyrian_clip_image004.jpg")} />
+                This armour is used also during the 
+              </p>
             </div>
-            <p className="content">
-              During the time of inovating the Body Armour it was the Assyrian
-              Empire, which is still considered in Acient Mesopotamia,
-              <img src={require("./helmet.jpg")} />
-            </p>
           </div>
         </div>
       );
@@ -372,6 +382,14 @@ const Military = ({ isDark }) => {
               During the time of inovating the Body Armour it was the Assyrian
               Empire, which is still considered in Acient Mesopotamia,
               <img src={require("./helmet.jpg")} />
+              The first helemts was called Conical helmet, it was made in the
+              8th century BC. It is used by the Assyrians, the helmet is
+              described to have a calotte helmet that rises to a point above the
+              head. and was made mostly of iron due to the cheap cost. it also
+              has a little bit of bronze on the bottom. Later the Cuirass was
+              also invented as a type of body armour. The name of it is called
+              Laminar Armour
+              <img src={require("./Assyrian_clip_image004.jpg")} />
             </p>
           </div>
         </div>

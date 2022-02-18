@@ -23,6 +23,8 @@ function LoginPage() {
 
             setisLoggedIn(true);
             navigate("/");
+          } else {
+            alert("Wrong Password!");
           }
         }}
       >
