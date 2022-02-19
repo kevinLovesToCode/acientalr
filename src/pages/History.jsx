@@ -13,7 +13,7 @@ function History({ isDark }) {
   if (data === "true") {
     if (isDark === true) {
       return (
-        <div className="homeDark">
+        <div className="homehomeDark">
           <img className="imageBackground" src={require("./../history.jpg")} />
           <img className="defaultImage" src={require("./../history.jpg")} />
 
@@ -34,7 +34,7 @@ function History({ isDark }) {
       );
     } else {
       return (
-        <div className="homeLight">
+        <div className="homehomeLight">
           <img className="imageBackground" src={require("./../history.jpg")} />
           <img className="defaultImage" src={require("./../history.jpg")} />
 

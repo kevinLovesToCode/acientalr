@@ -6,7 +6,14 @@ function LoginPage() {
   const [isLoggedIn, setisLoggedIn] = useState(false);
   const [UserInput, setUserInput] = useState("");
   return (
+    <>
+    <div className="title"><h2>Welcome! Please log in to access the info after.</h2></div>
+
     <div className="home">
+      <div>
+      <center>Login to Access the info below</center>
+
+      <hr></hr>
       <input
         type="password"
         onChange={(event) => {
@@ -14,7 +21,6 @@ function LoginPage() {
           setUserInput(userValue);
         }}
       />
-      <hr />
       <button
         onClick={() => {
           if (UserInput === "kevkev") {
@@ -30,7 +36,10 @@ function LoginPage() {
       >
         Login
       </button>
+
+      </div>
     </div>
+    </>
   );
 }
 

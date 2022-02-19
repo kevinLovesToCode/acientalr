@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import { BsLightbulbFill, BsMoonStarsFill } from "react-icons/bs";
 import { AiFillBook } from "react-icons/ai";
@@ -311,7 +313,6 @@ const Military = ({ isDark }) => {
               be found in Ur(mom) Iraq.
             </p>
             <div className="br"></div>
-            <div className="title">
               <div className="title">
                 <h5>Body Armour</h5>
               </div>
@@ -326,11 +327,10 @@ const Military = ({ isDark }) => {
                 invented as a type of body armour. The name of it is called
                 Laminar Armour
                 <img src={require("./Assyrian_clip_image004.jpg")} />
-                This armour is used also during the 
+                This armour is used also during the warfare time.
               </p>
             </div>
           </div>
-        </div>
       );
     } else {
       return (
@@ -381,14 +381,13 @@ const Military = ({ isDark }) => {
             <p className="content">
               During the time of inovating the Body Armour it was the Assyrian
               Empire, which is still considered in Acient Mesopotamia,
-              <img src={require("./helmet.jpg")} />
               The first helemts was called Conical helmet, it was made in the
               8th century BC. It is used by the Assyrians, the helmet is
               described to have a calotte helmet that rises to a point above the
               head. and was made mostly of iron due to the cheap cost. it also
               has a little bit of bronze on the bottom. Later the Cuirass was
-              also invented as a type of body armour. The name of it is called
-              Laminar Armour
+              also invented as a type of body armour. This armour is used also during the warfare time.
+
               <img src={require("./Assyrian_clip_image004.jpg")} />
             </p>
           </div>
@@ -398,7 +397,94 @@ const Military = ({ isDark }) => {
   } else {
     return <Navigate to="/login" />;
   }
-};
+}
+
+function SocialClass({ isDark }) {
+    const [isLoggedIn, setisLoggedIn] = useState("");
+    useEffect(() => {
+      setisLoggedIn(data);
+      console.log(data);
+    }, []);
+    const data = sessionStorage.getItem("isLoggedIn");
+  
+    if (data === "true") {
+      if (isDark === true) {
+        return (
+        
+        <div className="lo">
+           <div className="farmRoomDark">
+             <div className="title">
+               <h1>Social Class</h1>
+             </div>
+             <div className="br"></div>
+             <p className="content">
+             The social class for the mesopotamia is something that is very interesting. Because the Mesopotamia has many population. This made them making roles​
+             here is the social class, on the top we have a king,
+<img src={require("./social class.jpg")} />
+
+beneath it we have the Goverment officals/Military officals and the priests. They are used to advice the king and keep the enviorment clean and consise. Below it we have the scribes, and merchants and artisans, they are also called the upper and middle class. Below that we have the farmers/slaves, the slaves are captured from neighboring cities and they are all given the golden opputuninty to work there way up the social class. Thye believe that the city, land and social class has to deal with God and so the king, goverment officals, priests, scribes, merchants, farmers, and slaves was believd to be seeked and chosed by god. This is a way to manage the people and is able to manage and control peoples roles to further produce and advance more into the future. Althrough many people have fought and complained about this rule, the rule has still been respected since this is still agreed by the king and dynasty as one of the worth it choices, So they decided to keep this rule.  The priests are also used to
+
+             </p>
+             <div className="br"></div>
+             <div className="title">
+               <h6>King</h6>
+             </div>
+             <div className="br"></div>
+             <p className="content">
+               The king is super rare and is chosen by gift from the gods and the king was therefore divinely chosen. The king has access to everything including the priests, and goverment officals. it also is can declare war if its really needed and only for peace at most times. 
+<img src={require("./king.jpeg")} />
+They also do important jobs. They also help prey and feed food to there gods. Common Mesopotamians considered the king as the representative of the city’s patron god, the god’s overseer on earth, so to speak.
+
+A king was expected to protect his city, to provide law, order and justice and to be a shepherd to the people, ensuring that widows and orphans were cared for. Kings formed dynasties and leadership passed from father to son. Women, in general, were not involved in politics, but there are instances of women ruling a city.
+
+             </p>
+             <div className="br"></div>
+             <div className="title">
+               <h6>Priests/Goverment officals</h6>
+             </div>
+             <div className="br"></div>
+             <p className="content">
+               <img src={require("./preists.jpg")} />
+               The priests/goverment officals were equals to the king in power and honor. They were mediators between the gods and the people. Ordinary Mesopotamians looked to the priesthood to gain the favor of the gods, especially the patron god or goddess of their city. Mesopotamian Priests and priestesses had many duties and responsibilities, and in exchange they received respect, honor and creature comforts.
+
+Each city was organized around the god’s temple, which was a complex of buildings including the temple proper, chambers for the Mesopotamian priests and priestesses, workshops and public areas. A temple had two chief administrators. One, the en or chief priest, oversaw all sacred and religious duties of all the priests and priestesses. His or her job was to please the gods, to divine their will and communicate it to the ruler and the people. He supervised scores of other priests in performing sacred duties. These priests had many tasks; some cared for the gods by feeding and clothing them, others sang, made music and wrote hymns, and others still provided religious services to the people. Different types of priests performed purifications, exorcisms, treated people medically and prayed with them. 
+
+
+             </p>
+             <div className="br"></div>
+             <div className="title">
+               <h5 >Upper/Middle class</h5>
+             </div>
+             <div className="br"></div>
+             <p className="content">
+             <img src={require("./upperclass.jpg")} />
+
+             The upper classes of ancient Mesopotamia included kings and their families, priests and priestesses, ranking military officers, scribes and wealthier merchants and traders. The hereditary noble class were the kings, land-owning families and priests and priestesses and their families. Keep in mind that ancient Mesopotamia’s history stretches over 3000 years and includes many cultures: Sumerians, Akkadians, Babylonians and Assyrians. We can discuss these groups as one general culture as they all lived in the lands we call Mesopotamia and were very similar. The middle class have access to lower level of things of the culture such as iron, and cheap silk. They are not allowed to have slaves as they are not upper class.
+             </p>
+             <div className="br"></div>
+             <div className="title">
+               <h5 >Slaves/Farmers</h5>
+             </div>
+             <div className="br"></div>
+             <p className="content">
+             <img src={require("./labour.jfif")} />
+
+             The slaves are controlled by kings, priests, goverment officals, and upper class mostly captured from neighboring citys or commited crimes.
+             Slaves were bought and sold in the market and branded. They worked in irrigation projects, temples and palaces. In the Babylonian period, enslavement for debt was illegal.
+             In fact, farmers could produce a food surplus, or more than they needed. Farmers also used irrigation to water grazing areas for cattle and sheep. As a result, Mesopotamians ate a variety of foods. Fish, meat, wheat, barley, and dates were plentiful.
+             Slaves were bought and sold in the market and branded. They worked in irrigation projects, temples and palaces. In the Babylonian period, enslavement for debt was illegal.
+           </p>
+           </div>
+           
+          </div>
+          );
+      }else {
+        return (<h1>asdfasdf</h1>)
+      }
+    }else {
+      return <Navigate to="/login" />
+    }
+}
 
 function App() {
   const [IsDark, setIsDark] = useState(true);
@@ -438,6 +524,8 @@ function App() {
         <Route path="/history" element={<History isDark={IsDark} />} />
         <Route path="/military" element={<Military isDark={IsDark} />} />
         <Route path="*" element={<Error />} />
+        <Route path="/socialclass" element={<SocialClass isDark={IsDark}/>} />
+      
       </Routes>
     </div>
   );
