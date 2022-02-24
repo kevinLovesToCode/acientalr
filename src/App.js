@@ -1354,7 +1354,7 @@ const Sources = ({ isDark }) => {
               <h5 className="content">
                 Over the past two months i've been nonstop coding and here is
                 the final result, i tried my best and here i am presenting you
-                one of my finest ReactJS projects - Kevin Wu
+                one of my finest ReactJS
               </h5>
             </center>
           </div>
@@ -1396,36 +1396,8 @@ const Sources = ({ isDark }) => {
                   <h1>britannica - History Of Acient Mesopotamia</h1>
                 </li>
                 <div className="br"></div>
-                <li>
-                  <h1>ReactJS - Framework for website</h1>
-                </li>
-                <div className="br"></div>
-
-                <li>
-                  <h1>ReactBootstrap - UI libary for React</h1>
-                </li>
-                <div className="br"></div>
-                <li>
-                  <h1>
-                    NPM - Node Package manager, used to help install libary
-                  </h1>
-                </li>
-                <div className="br"></div>
-                <li>
-                  <h1>GitHub - Used to track and save code</h1>
-                </li>
-                <div className="br"></div>
               </ul>
             </div>
-            <center>
-              <h1>Thanks & Credits</h1>
-              <div className="br"></div>
-              <h5 className="content">
-                Over the past two months i've been nonstop coding and here is
-                the final result, i tried my best and here i am presenting you
-                one of my finest ReactJS projects - Kevin Wu
-              </h5>
-            </center>
           </div>
         </div>
       );
@@ -1515,7 +1487,7 @@ const Conflict = ({ isDark }) => {
         <div className="lo">
           <div className="farmRoomLight">
             <div className="title">
-              <h1>ConFlict</h1>
+              <h1>Conflict</h1>
             </div>
             <div className="br"></div>
 
@@ -1608,8 +1580,6 @@ function App() {
             <Nav.Link href="/architecture">Architecture </Nav.Link>
             <Nav.Link href="/cuniform">Cuniform</Nav.Link>
             <Nav.Link href="/specilizedjobs">specialized jobs</Nav.Link>
-            <Nav.Link href="/conflict">Conflict</Nav.Link>
-            <Nav.Link href="/sources">Sources/Credits</Nav.Link>
           </Nav>
           <Nav className="d-flex">
             <button onClick={() => setDark(IsDark, setIsDark, setIsSetDark)}>
