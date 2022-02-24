@@ -8,6 +8,161 @@ import Home from "./pages/Home";
 import History from "./pages/History";
 import Error from "./LogPages/Error";
 import LoginPage from "./LogPages/LoginPage";
+const Arch = ({ isLightMode }) => {
+  const [isLoggedIn, setisLoggedIn] = useState("");
+  useEffect(() => {
+    setisLoggedIn(data);
+    console.log(data);
+  }, []);
+  const data = sessionStorage.getItem("isLoggedIn");
+  if (data === "true") {
+    if (isLightMode === true) {
+      return (
+        <div className="lo">
+          <div className="farmRoomDark">
+            <div className="title">
+              <h1>Architecture</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./as.jpg")} />
+              The ziggurat's architecture is ziggurat, pyramidal stepped temple
+              tower that is an architectural and religious structure
+              characteristic of the major cities of Mesopotamia (now mainly in
+              Iraq) from approximately 2200 until 500 BCE. The ziggurat was
+              always built with a core of mud brick and an exterior covered with
+              baked brick. It had no internal chambers and was usually square or
+              rectangular, averaging either 170 feet (50 metres) square or 125 ×
+              170 feet (40 × 50 metres) at the base. Approximately 25 ziggurats
+              are known, being equally divided among Sumer, Babylonia, and
+              Assyria. No ziggurat is preserved to its original height. Ascent
+              was by an exterior triple stairway or by a spiral ramp, but for
+              almost half of the known ziggurats, no means of ascent has been
+              discovered. The sloping sides and terraces were often landscaped
+              with trees and shrubs (hence the Hanging Gardens of Babylon). The
+              best-preserved ziggurat is at Ur (modern Tall al-Muqayyar, Iraq).
+              The largest, at Choghā Zanbīl in Elam (now in southwestern Iran),
+              is 335 feet (102 metres) square and 80 feet (24 metres) high and
+              stands at less than half its estimated original height. A
+              ziggurat, apparently of great antiquity, is located at Tepe Sialk
+              in modern Kāshān, Iran. The legendary Tower of Babel has been
+              popularly associated with the ziggurat of the great temple of
+              Marduk in Babylon.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>Babylon architectural design</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./11.png")} />
+              The Mesopotamians regarded “the craft of building” as a divine
+              gift taught to men by the gods, and architecture flourished in the
+              region. A paucity of stone in the region made sun baked bricks and
+              clay the building material of choice. Babylonian architecture
+              featured pilasters and columns , as well as frescoes and enameled
+              tiles. Assyrian architects were strongly influenced by the
+              Babylonian style , but used stone as well as brick in their
+              palaces, which were lined with sculptured and colored slabs of
+              stone instead of being painted. Existing ruins point to
+              load-bearing architecture as the dominant form of building.
+              However, the invention of the round arch in the general area of
+              Mesopotamia influenced the construction of structures like the
+              Ishtar Gate in the sixth century BCE.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>ziggurat designs</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./zigurat-ur-composicion.jpg")} />
+              This is the ziggurat, a stepped pyrmid, its represented with the
+              different social classes, the preists and goverment officals can
+              be on the second top level. In every level, there are always a
+              different level where you can walk and play on. At the top level
+              is where they worship the god with food and other stuff. The rest
+              of the layers represent the middle, high, and slavery classes.
+            </p>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="lo">
+          <div className="farmRoomLight">
+            <div className="title">
+              <h1>architecture</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./as.jpg")} />
+              The ziggurat's architecture is ziggurat, pyramidal stepped temple
+              tower that is an architectural and religious structure
+              characteristic of the major cities of Mesopotamia (now mainly in
+              Iraq) from approximately 2200 until 500 BCE. The ziggurat was
+              always built with a core of mud brick and an exterior covered with
+              baked brick. It had no internal chambers and was usually square or
+              rectangular, averaging either 170 feet (50 metres) square or 125 ×
+              170 feet (40 × 50 metres) at the base. Approximately 25 ziggurats
+              are known, being equally divided among Sumer, Babylonia, and
+              Assyria. No ziggurat is preserved to its original height. Ascent
+              was by an exterior triple stairway or by a spiral ramp, but for
+              almost half of the known ziggurats, no means of ascent has been
+              discovered. The sloping sides and terraces were often landscaped
+              with trees and shrubs (hence the Hanging Gardens of Babylon). The
+              best-preserved ziggurat is at Ur (modern Tall al-Muqayyar, Iraq).
+              The largest, at Choghā Zanbīl in Elam (now in southwestern Iran),
+              is 335 feet (102 metres) square and 80 feet (24 metres) high and
+              stands at less than half its estimated original height. A
+              ziggurat, apparently of great antiquity, is located at Tepe Sialk
+              in modern Kāshān, Iran. The legendary Tower of Babel has been
+              popularly associated with the ziggurat of the great temple of
+              Marduk in Babylon.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>Babylon architectural design</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./11.png")} />
+              The Mesopotamians regarded “the craft of building” as a divine
+              gift taught to men by the gods, and architecture flourished in the
+              region. A paucity of stone in the region made sun baked bricks and
+              clay the building material of choice. Babylonian architecture
+              featured pilasters and columns , as well as frescoes and enameled
+              tiles. Assyrian architects were strongly influenced by the
+              Babylonian style , but used stone as well as brick in their
+              palaces, which were lined with sculptured and colored slabs of
+              stone instead of being painted. Existing ruins point to
+              load-bearing architecture as the dominant form of building.
+              However, the invention of the round arch in the general area of
+              Mesopotamia influenced the construction of structures like the
+              Ishtar Gate in the sixth century BCE.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>ziggurat designs</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./zigurat-ur-composicion.jpg")} />
+              This is the ziggurat, a stepped pyrmid, its represented with the
+              different social classes, the preists and goverment officals can
+              be on the second top level. In every level, there are always a
+              different level where you can walk and play on. At the top level
+              is where they worship the god with food and other stuff. The rest
+              of the layers represent the middle, high, and slavery classes.
+            </p>
+          </div>
+        </div>
+      );
+    }
+  } else {
+    return <Navigate to="/login" />;
+  }
+};
 const Farming = ({ isLightMode }) => {
   const [isLoggedIn, setisLoggedIn] = useState("");
   useEffect(() => {
@@ -24,6 +179,7 @@ const Farming = ({ isLightMode }) => {
             <div className="title">
               <h1>Farming</h1>
             </div>
+            <div className="br"></div>
             <p className="content">
               The constant flooding in the land of Mesopotamia caused the crops
               that they grown to be destroyed so they have to find a solution.
@@ -142,6 +298,8 @@ const Farming = ({ isLightMode }) => {
             <div className="title">
               <h1>Farming</h1>
             </div>
+            <div className="br"></div>
+
             <p className="content">
               The constant flooding in the land of Mesopotamia caused the crops
               that they grown to be destroyed so they have to find a solution.
@@ -801,6 +959,142 @@ function SocialClass({ isDark }) {
     return <Navigate to="/login" />;
   }
 }
+const SpecilizedJobs = ({ isDark }) => {
+  const [isLoggedIn, setisLoggedIn] = useState("");
+  useEffect(() => {
+    setisLoggedIn(data);
+    console.log(data);
+  }, []);
+  const data = sessionStorage.getItem("isLoggedIn");
+
+  if (data === "true") {
+    if (isDark === true) {
+      return (
+        <div className="lo">
+          <div className="farmRoomDark">
+            <div className="title">
+              <h1>Specilized Jobs</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./download.jpg")} />
+              The specilized jobs are made from the social classes, depending on
+              your social class you get differnt payload and different jobs and
+              enviorment. Now also based on there area of work they are also
+              split into different areas to work. Some live far from tghe
+              ziggurat or live in one story buildings symbolizing that they are
+              farmers or slaves while others that live in two story buildings
+              are more rich and upper class style jobs are. The specilized jobs
+              included farmers to scribes, preists to professional soilders that
+              serve there nation. This allows them to instead of focusing on one
+              part of the civilization they can focus on much more
+              civilizations. This also lead to the rise of its civilization.
+              This also made it so that acient mesopotamia is one of the best or
+              most seccussful acient civilization;The larger populations of a
+              city demand that more food be produced. In general, a society
+              needs food surpluses before civilization can develop. Having food
+              surpluses allowed some people to do other types of work besides
+              farming. With food surpluses, workers can specialize in jobs that
+              require special skills. For instance, Sumerian workers built
+              houses, sewed clothes, created pottery, and cooperated on building
+              public projects such as ziggurats and irrigation canals. With so
+              many needs and such a variety of workers, some people took on the
+              job of organizing society. In early Sumer, priests did that job.
+              They ran society and acted as judges. In time, religion and
+              government became institutions. An institution is a group of
+              people who share a specific purpose. For instance, schools are
+              institutions that exist to educate a population. Religion is an
+              institution that helps a population meet its spiritual needs. An
+              Societies must keep track of many things. For example, rulers may
+              want to measure the amount of surpluses stored in the city.
+              Keeping records usually involves writing, but not always. In
+              Mesopotamia, people started by using wooden counting sticks.
+              Later, they invented the world's first system of writing,
+              cuneiform. As people learn better ways to do things, societies
+              advance. The people of early Sumer learned to use canals to
+              irrigate crops. They also created new tools and used new materials
+              to make those tools. For instance, the Sumerians began to make
+              tools out of bronze. Bronze tools replaced tools made of copper, a
+              softer metal.Civilization is closely linked to life in cities. At
+              first, cities became important because farmers needed a place to
+              store and trade their surplus grain. As cities grew, however, they
+              began to offer other advantages such as temples to pray in and
+              protection from outside threats. Because of the various services
+              that a city provided, for those in search of a job, cities also
+              offered many different types of work.
+              <img src={require("./3074576.jpg")} />
+              army is an institution that helps a society meet its security
+              needs.
+            </p>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="lo">
+          <div className="farmRoomLight">
+            <div className="title">
+              <h1>Specilized Jobs</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./download.jpg")} />
+              The specilized jobs are made from the social classes, depending on
+              your social class you get differnt payload and different jobs and
+              enviorment. Now also based on there area of work they are also
+              split into different areas to work. Some live far from tghe
+              ziggurat or live in one story buildings symbolizing that they are
+              farmers or slaves while others that live in two story buildings
+              are more rich and upper class style jobs are. The specilized jobs
+              included farmers to scribes, preists to professional soilders that
+              serve there nation. This allows them to instead of focusing on one
+              part of the civilization they can focus on much more
+              civilizations. This also lead to the rise of its civilization.
+              This also made it so that acient mesopotamia is one of the best or
+              most seccussful acient civilization;The larger populations of a
+              city demand that more food be produced. In general, a society
+              needs food surpluses before civilization can develop. Having food
+              surpluses allowed some people to do other types of work besides
+              farming. With food surpluses, workers can specialize in jobs that
+              require special skills. For instance, Sumerian workers built
+              houses, sewed clothes, created pottery, and cooperated on building
+              public projects such as ziggurats and irrigation canals. With so
+              many needs and such a variety of workers, some people took on the
+              job of organizing society. In early Sumer, priests did that job.
+              They ran society and acted as judges. In time, religion and
+              government became institutions. An institution is a group of
+              people who share a specific purpose. For instance, schools are
+              institutions that exist to educate a population. Religion is an
+              institution that helps a population meet its spiritual needs. An
+              Societies must keep track of many things. For example, rulers may
+              want to measure the amount of surpluses stored in the city.
+              Keeping records usually involves writing, but not always. In
+              Mesopotamia, people started by using wooden counting sticks.
+              Later, they invented the world's first system of writing,
+              cuneiform. As people learn better ways to do things, societies
+              advance. The people of early Sumer learned to use canals to
+              irrigate crops. They also created new tools and used new materials
+              to make those tools. For instance, the Sumerians began to make
+              tools out of bronze. Bronze tools replaced tools made of copper, a
+              softer metal.Civilization is closely linked to life in cities. At
+              first, cities became important because farmers needed a place to
+              store and trade their surplus grain. As cities grew, however, they
+              began to offer other advantages such as temples to pray in and
+              protection from outside threats. Because of the various services
+              that a city provided, for those in search of a job, cities also
+              offered many different types of work.
+              <img src={require("./3074576.jpg")} />
+              army is an institution that helps a society meet its security
+              needs.
+            </p>
+          </div>
+        </div>
+      );
+    }
+  } else {
+    return <Navigate to="/login" />;
+  }
+};
 const Cuniform = ({ isDark }) => {
   const [isLoggedIn, setisLoggedIn] = useState("");
   useEffect(() => {
@@ -901,36 +1195,385 @@ const Cuniform = ({ isDark }) => {
         <div className="lo">
           <div className="farmRoomLight">
             <div className="title">
-              <h1>Social Class</h1>
+              <h1>Cuniform</h1>
             </div>
-            Earliest times they invented the cuneiform or a ancient writing
-            system used to record and pass down messages to both the future and
-            other people. The writing was write on a clay tablet. It was
-            invented by 3000BCE and was the representations were more simplified
-            and the strokes of the stylus conveyed wood-concepts rather then
-            word signs. this type was also used to do math and create math to
-            used to type and print math. The great innovation of this leaded to
-            more productive ciliation providing laws, records, and history. It
-            was also used to create laws and communicate with others. This made
-            both trading and mailing much more easier. Though after writing it
-            started to help with writing math. It is used to do the basic of
-            basic calculations.The third script of the Achaemenian trilinguals
-            had in the meantime been identified with that of the texts found in
-            very large numbers in Mesopotamia, which obviously contained the
-            central language of cuneiform culture, namely Akkadian. Here also
-            the proper names provided the first concrete clues for a
-            decipherment, but the extreme variety of signs and the peculiar
-            complications of the system raised difficulties which for a time
-            seemed insurmountable. The serious external divergencies between
-            older and newer types of Akkadian cuneiform, the distribution of
-            ideographic and syllabic uses of the signs, the simple and complex
-            values of the syllables, and especially the bewildering polyphony of
-            many notations were only gradually surmised by scholars. Once the
-            Semitic character of the language had been established, the
-            philological science of Assyriology developed rapidly from the
-            closing decades of the 19th century onward, especially because of
-            scholars like Friedrich Delitzsch and, later, Benno Landsberger and
-            Wolfram von Soden.
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./asd.jpg")} />
+              <img src={require("./asd.jpg")} />
+              Earliest times they invented the cuneiform or a ancient writing
+              system used to record and pass down messages to both the future
+              and other people. The writing was write on a clay tablet. It was
+              invented by 3000BCE and was the representations were more
+              simplified and the strokes of the stylus conveyed wood-concepts
+              rather then word signs. this type was also used to do math and
+              create math to used to type and print math. The great innovation
+              of this leaded to more productive ciliation providing laws,
+              records, and history. It was also used to create laws and
+              communicate with others. This made both trading and mailing much
+              more easier. Though after writing it started to help with writing
+              math. It is used to do the basic of basic calculations.The third
+              script of the Achaemenian trilinguals had in the meantime been
+              identified with that of the texts found in very large numbers in
+              Mesopotamia, which obviously contained the central language of
+              cuneiform culture, namely Akkadian. Here also the proper names
+              provided the first concrete clues for a decipherment, but the
+              extreme variety of signs and the peculiar complications of the
+              system raised difficulties which for a time seemed insurmountable.
+              The serious external divergencies between older and newer types of
+              Akkadian cuneiform, the distribution of ideographic and syllabic
+              uses of the signs, the simple and complex values of the syllables,
+              and especially the bewildering polyphony of many notations were
+              only gradually surmised by scholars. Once the Semitic character of
+              the language had been established, the philological science of
+              Assyriology developed rapidly from the closing decades of the 19th
+              century onward, especially because of scholars like Friedrich
+              Delitzsch and, later, Benno Landsberger and Wolfram von Soden.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>Math</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./1.jfif")} />
+              Babylonian mathematics is a range of numeric and more advanced
+              mathematical practices in the ancient Near East, written in
+              cuneiform script. Study has historically focused on the Old
+              Babylonian period in the early second millennium BC due to the
+              wealth of data available. There has been debate over the earliest
+              appearance of Babylonian mathematics, with historians suggesting a
+              range of dates between the 5th and 3rd millennia BC. Babylonian
+              mathematics was primarily written on clay tablets in cuneiform
+              script in the Akkadian or Sumerian languages. "Babylonian
+              mathematics" is perhaps an unhelpful term since the earliest
+              suggested origins date to the use of accounting devices, such as
+              bullae and tokens, in the 5th millennium BC. The Mesopotamians are
+              credited with inventing mathematics. The people of Mesopotamia
+              developed mathematics about 5,000 years ago. Early mathematics was
+              essentially a form of counting, and was used to count things like
+              sheep, crops and exchanged goods. Later it was used to solve more
+              sophisticated problems related to irrigation and perhaps
+              architecture. By the Late Babylonian period was used to solve
+              complicated astrological and geometrical problems.The considerable
+              mathematical knowledge of the Babylonians was uncovered by the
+              Austrian mathematician Otto E. Neugebauer, who died in 1990.
+              Scholars since then have turned to the task of understanding how
+              the knowledge was used. The archaeological collections at
+              Columbia, Yale and the University of Pennsylvania have offered
+              insights into this issue. Kenneth Chang wrote in the New York
+              Times: “Early Babylonian mathematicians who lived between 1800
+              B.C. and 1600 B.C. had figured out, for example, how to calculate
+              the area of a trapezoid, and even how to divide a trapezoid into
+              two smaller trapezoids of equal area. For the most part,
+              Babylonians used their mathematical skills for mundane
+              calculations, like figuring out the size of a plot of land. But on
+              some tablets from the later Babylonian period, there appear to be
+              some trapezoid calculations related to astronomical
+              observations.In the 1950s, an Austrian-American mathematician and
+              science historian, Otto E. Neugebauer, described two of them.”
+              [Source: Kenneth Chang , New York Times, January 28, 2016]
+            </p>
+          </div>
+        </div>
+      );
+    }
+  } else {
+    return <Navigate to="/login" />;
+  }
+};
+const Sources = ({ isDark }) => {
+  const [isLoggedIn, setisLoggedIn] = useState("");
+  useEffect(() => {
+    setisLoggedIn(data);
+    console.log(data);
+  }, []);
+  const data = sessionStorage.getItem("isLoggedIn");
+
+  if (data === "true") {
+    if (isDark === true) {
+      return (
+        <div className="lo">
+          <div className="farmRoomDark">
+            <div className="title">
+              <h1>Sources</h1>
+            </div>
+            <div className="br"></div>
+            <div className="content">
+              <ul>
+                <li>
+                  <h1>Wikipedia - Acient mesopotamia</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>
+                    HistoryOnThenet - Mespotamian Warfare/Military/socialclass
+                  </h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>Youtube - Agriculture</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>History - History Of Acient Mesopotamia</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>britannica - History Of Acient Mesopotamia</h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>ReactJS - Framework for website</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>ReactBootstrap - UI libary for React</h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>
+                    NPM - Node Package manager, used to help install libary
+                  </h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>GitHub - Used to track and save code</h1>
+                </li>
+                <div className="br"></div>
+              </ul>
+            </div>
+            <center>
+              <h1>Thanks & Credits</h1>
+              <div className="br"></div>
+              <h5 className="content">
+                Over the past two months i've been nonstop coding and here is
+                the final result, i tried my best and here i am presenting you
+                one of my finest ReactJS projects - Kevin Wu
+              </h5>
+            </center>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="lo">
+          <div className="farmRoomLight">
+            <div className="title">
+              <h1>Sources</h1>
+            </div>
+            <div className="br"></div>
+            <div className="content">
+              <ul>
+                <li>
+                  <h1>Wikipedia - Acient mesopotamia</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>
+                    HistoryOnThenet - Mespotamian Warfare/Military/socialclass
+                  </h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>Youtube - Agriculture</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>History - History Of Acient Mesopotamia</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>britannica - History Of Acient Mesopotamia</h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>ReactJS - Framework for website</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>ReactBootstrap - UI libary for React</h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>
+                    NPM - Node Package manager, used to help install libary
+                  </h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>GitHub - Used to track and save code</h1>
+                </li>
+                <div className="br"></div>
+              </ul>
+            </div>
+            <center>
+              <h1>Thanks & Credits</h1>
+              <div className="br"></div>
+              <h5 className="content">
+                Over the past two months i've been nonstop coding and here is
+                the final result, i tried my best and here i am presenting you
+                one of my finest ReactJS projects - Kevin Wu
+              </h5>
+            </center>
+          </div>
+        </div>
+      );
+    }
+  } else {
+    return <Navigate to="/login" />;
+  }
+};
+const Conflict = ({ isDark }) => {
+  const [isLoggedIn, setisLoggedIn] = useState("");
+  useEffect(() => {
+    setisLoggedIn(data);
+    console.log(data);
+  }, []);
+  const data = sessionStorage.getItem("isLoggedIn");
+
+  if (data === "true") {
+    if (isDark === true) {
+      return (
+        <div className="lo">
+          <div className="farmRoomDark">
+            <div className="title">
+              <h1>Conflict</h1>
+            </div>
+            <div className="br"></div>
+
+            <p className="content">
+              <img src={require("./download_orig.jpg")} />
+              Hammurabi (1792 to 1750 B.C.), who created the first Babylonian
+              empire, used all of Sargon’s weapons and tactics. He was known to
+              create alliances, then later end them, conquering his former
+              allies. Hammurabi’s reputation included damming up and diverting a
+              city-state’s water sources. A clever emperor, his empire lasted
+              only during his lifetime. The Later Neo-Babylonian Empire (626 to
+              539 B.C.) repeated his successes. This made it super hard for them
+              to do anything. This also made it super hard for them to work on
+              everything since the constant invading didn't really allow the
+              farmers to increase profit nor grow plants. So after they
+              conquered the land, they drastically settled a lot of new rules.
+              Sargon of Akkad created the first empire through conquest.
+              Sargon’s conquest began with Sumer and stretched from the Persian
+              Gulf to Syria and the Taurus Mountains in southern Anatolia or
+              Turkey. During Sargon’s 50-year reign, he fought in 34 wars, using
+              a core military of 5,400 men, the first true standing army. Once a
+              city-state was conquered, it was required to provide a contingent
+              of military men for Sargon’s main army. This became a standard
+              element for empires from then on, the use of conquered forces in
+              the victor’s army. As armies grew larger, the need for competent
+              administration and logistics grew in importance. Sargon’s talents
+              included administration and delegation: he gave this work to
+              trusted men in both civilian and military matters. The invention
+              of composite bow gave Sargon’s army a great advantage. Made of
+              wood, horn and animal sinew laminated together, the composite bow
+              had two to three times the power of a simple wooden bow. It could
+              shoot twice the distance, and arrows shot from it could easily
+              penetrate leather armor. In Sumer, there was no standing army,
+              although there may have been some professional soldiers. When the
+              king, high priest and council of elders decided the need for war,
+              they called all free male citizens to arms. Each citizen had to
+              bring his own weapons. Common weapons included bows, spears,
+              slingshots, battle axes, maces and knives. Protective armor was
+              rare, although many carried shields. Professional soldiers wore
+              helmets of copper. When cities went to war, as did Umma and Lagash
+              around 2525 B.C., the citizen armies came out from their cities
+              and met on open land. At 300 feet distance, each army’s archers
+              would shoot. The resulting barrage of arrows no doubt killed many,
+              whose bodies were then trodden under foot when the armies charged
+              each other with spears. Spears and rocks thrown by slingshots
+              filled the air and many more died. Apparently, the army with the
+              most men still standing won the day. This was the typical battle
+              order of the times. A stele raised by the king of Lagash
+              commemorates the victory of that city over its neighbor and enemy
+              city, Umma. The Stele of Vultures shows ranks of soldiers in a
+              phalanx formation, armed with spears and wearing copper helmets
+              and short, armored cloaks for protection. The king of Lagash rode
+              to the battle in the chariot of the times—a clumsy, heavy cart
+              pulled by four onagers, or semi-wild asses. Sumerian military
+              innovation includes the chariot, helmet, armored cloaks, bronze
+              axes and the phalanx formation in battle.
+              <img src={require("./Stele_of_Vultures_detail_01.jpg")} />
+            </p>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="lo">
+          <div className="farmRoomLight">
+            <div className="title">
+              <h1>Conflict</h1>
+            </div>
+            <div className="br"></div>
+
+            <p className="content">
+              <img src={require("./download_orig.jpg")} />
+              Hammurabi (1792 to 1750 B.C.), who created the first Babylonian
+              empire, used all of Sargon’s weapons and tactics. He was known to
+              create alliances, then later end them, conquering his former
+              allies. Hammurabi’s reputation included damming up and diverting a
+              city-state’s water sources. A clever emperor, his empire lasted
+              only during his lifetime. The Later Neo-Babylonian Empire (626 to
+              539 B.C.) repeated his successes. This made it super hard for them
+              to do anything. This also made it super hard for them to work on
+              everything since the constant invading didn't really allow the
+              farmers to increase profit nor grow plants. So after they
+              conquered the land, they drastically settled a lot of new rules.
+              Sargon of Akkad created the first empire through conquest.
+              Sargon’s conquest began with Sumer and stretched from the Persian
+              Gulf to Syria and the Taurus Mountains in southern Anatolia or
+              Turkey. During Sargon’s 50-year reign, he fought in 34 wars, using
+              a core military of 5,400 men, the first true standing army. Once a
+              city-state was conquered, it was required to provide a contingent
+              of military men for Sargon’s main army. This became a standard
+              element for empires from then on, the use of conquered forces in
+              the victor’s army. As armies grew larger, the need for competent
+              administration and logistics grew in importance. Sargon’s talents
+              included administration and delegation: he gave this work to
+              trusted men in both civilian and military matters. The invention
+              of composite bow gave Sargon’s army a great advantage. Made of
+              wood, horn and animal sinew laminated together, the composite bow
+              had two to three times the power of a simple wooden bow. It could
+              shoot twice the distance, and arrows shot from it could easily
+              penetrate leather armor. In Sumer, there was no standing army,
+              although there may have been some professional soldiers. When the
+              king, high priest and council of elders decided the need for war,
+              they called all free male citizens to arms. Each citizen had to
+              bring his own weapons. Common weapons included bows, spears,
+              slingshots, battle axes, maces and knives. Protective armor was
+              rare, although many carried shields. Professional soldiers wore
+              helmets of copper. When cities went to war, as did Umma and Lagash
+              around 2525 B.C., the citizen armies came out from their cities
+              and met on open land. At 300 feet distance, each army’s archers
+              would shoot. The resulting barrage of arrows no doubt killed many,
+              whose bodies were then trodden under foot when the armies charged
+              each other with spears. Spears and rocks thrown by slingshots
+              filled the air and many more died. Apparently, the army with the
+              most men still standing won the day. This was the typical battle
+              order of the times. A stele raised by the king of Lagash
+              commemorates the victory of that city over its neighbor and enemy
+              city, Umma. The Stele of Vultures shows ranks of soldiers in a
+              phalanx formation, armed with spears and wearing copper helmets
+              and short, armored cloaks for protection. The king of Lagash rode
+              to the battle in the chariot of the times—a clumsy, heavy cart
+              pulled by four onagers, or semi-wild asses. Sumerian military
+              innovation includes the chariot, helmet, armored cloaks, bronze
+              axes and the phalanx formation in battle.
+              <img src={require("./Stele_of_Vultures_detail_01.jpg")} />
+            </p>
           </div>
         </div>
       );
@@ -962,6 +1605,11 @@ function App() {
             <Nav.Link href="/military">Military</Nav.Link>
             <Nav.Link href="/socialclass">Social Class</Nav.Link>
             <Nav.Link href="/inventions">Inventions</Nav.Link>
+            <Nav.Link href="/architecture">Architecture </Nav.Link>
+            <Nav.Link href="/cuniform">Cuniform</Nav.Link>
+            <Nav.Link href="/specilizedjobs">specialized jobs</Nav.Link>
+            <Nav.Link href="/conflict">Conflict</Nav.Link>
+            <Nav.Link href="/sources">Sources/Credits</Nav.Link>
           </Nav>
           <Nav className="d-flex">
             <button onClick={() => setDark(IsDark, setIsDark, setIsSetDark)}>
@@ -976,7 +1624,17 @@ function App() {
         <Route path="/cuniform" element={<Cuniform isDark={IsDark} />} />
 
         <Route path="/farming" element={<Farming isLightMode={IsDark} />} />
+        <Route path="/architecture" element={<Arch isLightMode={IsDark} />} />
+        <Route
+          path="/specilizedjobs"
+          element={<SpecilizedJobs isDark={IsDark} />}
+        />
+
         <Route path="/" element={<Home />} />
+        <Route path="/sources" element={<Sources isDark={IsDark} />} />
+
+        <Route path="/conflict" element={<Conflict isDark={IsDark} />} />
+
         <Route path="/history" element={<History isDark={IsDark} />} />
         <Route path="/military" element={<Military isDark={IsDark} />} />
         <Route path="*" element={<Error />} />
