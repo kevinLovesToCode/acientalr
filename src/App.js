@@ -1363,7 +1363,7 @@ const Sources = ({ isDark }) => {
     } else {
       return (
         <div className="lo">
-          <div className="farmRoomDark">
+          <div className="farmRoomLight">
             <div className="title">
               <h1>Sources</h1>
             </div>
