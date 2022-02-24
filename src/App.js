@@ -1515,7 +1515,7 @@ const Conflict = ({ isDark }) => {
         <div className="lo">
           <div className="farmRoomLight">
             <div className="title">
-              <h1>Conflict</h1>
+              <h1>ConFlict</h1>
             </div>
             <div className="br"></div>
 
