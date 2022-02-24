@@ -1363,7 +1363,7 @@ const Sources = ({ isDark }) => {
     } else {
       return (
         <div className="lo">
-          <div className="farmRoomLight">
+          <div className="farmRoomDark">
             <div className="title">
               <h1>Sources</h1>
             </div>
@@ -1396,8 +1396,36 @@ const Sources = ({ isDark }) => {
                   <h1>britannica - History Of Acient Mesopotamia</h1>
                 </li>
                 <div className="br"></div>
+                <li>
+                  <h1>ReactJS - Framework for website</h1>
+                </li>
+                <div className="br"></div>
+
+                <li>
+                  <h1>ReactBootstrap - UI libary for React</h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>
+                    NPM - Node Package manager, used to help install libary
+                  </h1>
+                </li>
+                <div className="br"></div>
+                <li>
+                  <h1>GitHub - Used to track and save code</h1>
+                </li>
+                <div className="br"></div>
               </ul>
             </div>
+            <center>
+              <h1>Thanks & Credits</h1>
+              <div className="br"></div>
+              <h5 className="content">
+                Over the past two months i've been nonstop coding and here is
+                the final result, i tried my best and here i am presenting you
+                one of my finest ReactJS
+              </h5>
+            </center>
           </div>
         </div>
       );
