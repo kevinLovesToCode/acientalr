@@ -1580,6 +1580,7 @@ function App() {
             <Nav.Link href="/architecture">Architecture </Nav.Link>
             <Nav.Link href="/cuniform">Cuniform</Nav.Link>
             <Nav.Link href="/specilizedjobs">specialized jobs</Nav.Link>
+            <Nav.Link href="/sources">Sources/Thanks</Nav.Link>
           </Nav>
           <Nav className="d-flex">
             <button onClick={() => setDark(IsDark, setIsDark, setIsSetDark)}>
