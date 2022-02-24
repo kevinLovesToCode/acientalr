@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import { BsLightbulbFill, BsMoonStarsFill } from "react-icons/bs";
 import { AiFillBook } from "react-icons/ai";
@@ -313,24 +311,23 @@ const Military = ({ isDark }) => {
               be found in Ur(mom) Iraq.
             </p>
             <div className="br"></div>
-              <div className="title">
-                <h5>Body Armour</h5>
-              </div>
-              <p className="content">
-                During the time of inovating the Body Armour it was the Assyrian
-                Empire, which is still considered in Acient Mesopotamia, The
-                first helemts was called Conical helmet, it was made in the 8th
-                century BC. It is used by the Assyrians, the helmet is described
-                to have a calotte helmet that rises to a point above the head.
-                and was made mostly of iron due to the cheap cost. it also has a
-                little bit of bronze on the bottom. Later the Cuirass was also
-                invented as a type of body armour. The name of it is called
-                Laminar Armour
-                <img src={require("./Assyrian_clip_image004.jpg")} />
-                This armour is used also during the warfare time.
-              </p>
+            <div className="title">
+              <h5>Body Armour</h5>
             </div>
+            <p className="content">
+              During the time of inovating the Body Armour it was the Assyrian
+              Empire, which is still considered in Acient Mesopotamia, The first
+              helemts was called Conical helmet, it was made in the 8th century
+              BC. It is used by the Assyrians, the helmet is described to have a
+              calotte helmet that rises to a point above the head. and was made
+              mostly of iron due to the cheap cost. it also has a little bit of
+              bronze on the bottom. Later the Cuirass was also invented as a
+              type of body armour. The name of it is called Laminar Armour
+              <img src={require("./Assyrian_clip_image004.jpg")} />
+              This armour is used also during the warfare time.
+            </p>
           </div>
+        </div>
       );
     } else {
       return (
@@ -380,14 +377,14 @@ const Military = ({ isDark }) => {
             </div>
             <p className="content">
               During the time of inovating the Body Armour it was the Assyrian
-              Empire, which is still considered in Acient Mesopotamia,
-              The first helemts was called Conical helmet, it was made in the
-              8th century BC. It is used by the Assyrians, the helmet is
-              described to have a calotte helmet that rises to a point above the
-              head. and was made mostly of iron due to the cheap cost. it also
-              has a little bit of bronze on the bottom. Later the Cuirass was
-              also invented as a type of body armour. This armour is used also during the warfare time.
-
+              Empire, which is still considered in Acient Mesopotamia, The first
+              helemts was called Conical helmet, it was made in the 8th century
+              BC. It is used by the Assyrians, the helmet is described to have a
+              calotte helmet that rises to a point above the head. and was made
+              mostly of iron due to the cheap cost. it also has a little bit of
+              bronze on the bottom. Later the Cuirass was also invented as a
+              type of body armour. This armour is used also during the warfare
+              time.
               <img src={require("./Assyrian_clip_image004.jpg")} />
             </p>
           </div>
@@ -397,95 +394,551 @@ const Military = ({ isDark }) => {
   } else {
     return <Navigate to="/login" />;
   }
-}
+};
 
-function SocialClass({ isDark }) {
-    const [isLoggedIn, setisLoggedIn] = useState("");
-    useEffect(() => {
-      setisLoggedIn(data);
-      console.log(data);
-    }, []);
-    const data = sessionStorage.getItem("isLoggedIn");
-  
-    if (data === "true") {
-      if (isDark === true) {
-        return (
-        
+const Inventions = ({ isDark }) => {
+  const [isLoggedIn, setisLoggedIn] = useState("");
+  useEffect(() => {
+    setisLoggedIn(data);
+    console.log(data);
+  }, []);
+  const data = sessionStorage.getItem("isLoggedIn");
+
+  if (data === "true") {
+    if (isDark === true) {
+      return (
         <div className="lo">
-           <div className="farmRoomDark">
-             <div className="title">
-               <h1>Social Class</h1>
-             </div>
-             <div className="br"></div>
-             <p className="content">
-             The social class for the mesopotamia is something that is very interesting. Because the Mesopotamia has many population. This made them making roles​
-             here is the social class, on the top we have a king,
-<img src={require("./social class.jpg")} />
-
-beneath it we have the Goverment officals/Military officals and the priests. They are used to advice the king and keep the enviorment clean and consise. Below it we have the scribes, and merchants and artisans, they are also called the upper and middle class. Below that we have the farmers/slaves, the slaves are captured from neighboring cities and they are all given the golden opputuninty to work there way up the social class. Thye believe that the city, land and social class has to deal with God and so the king, goverment officals, priests, scribes, merchants, farmers, and slaves was believd to be seeked and chosed by god. This is a way to manage the people and is able to manage and control peoples roles to further produce and advance more into the future. Althrough many people have fought and complained about this rule, the rule has still been respected since this is still agreed by the king and dynasty as one of the worth it choices, So they decided to keep this rule.  The priests are also used to
-
-             </p>
-             <div className="br"></div>
-             <div className="title">
-               <h6>King</h6>
-             </div>
-             <div className="br"></div>
-             <p className="content">
-               The king is super rare and is chosen by gift from the gods and the king was therefore divinely chosen. The king has access to everything including the priests, and goverment officals. it also is can declare war if its really needed and only for peace at most times. 
-<img src={require("./king.jpeg")} />
-They also do important jobs. They also help prey and feed food to there gods. Common Mesopotamians considered the king as the representative of the city’s patron god, the god’s overseer on earth, so to speak.
-
-A king was expected to protect his city, to provide law, order and justice and to be a shepherd to the people, ensuring that widows and orphans were cared for. Kings formed dynasties and leadership passed from father to son. Women, in general, were not involved in politics, but there are instances of women ruling a city.
-
-             </p>
-             <div className="br"></div>
-             <div className="title">
-               <h6>Priests/Goverment officals</h6>
-             </div>
-             <div className="br"></div>
-             <p className="content">
-               <img src={require("./preists.jpg")} />
-               The priests/goverment officals were equals to the king in power and honor. They were mediators between the gods and the people. Ordinary Mesopotamians looked to the priesthood to gain the favor of the gods, especially the patron god or goddess of their city. Mesopotamian Priests and priestesses had many duties and responsibilities, and in exchange they received respect, honor and creature comforts.
-
-Each city was organized around the god’s temple, which was a complex of buildings including the temple proper, chambers for the Mesopotamian priests and priestesses, workshops and public areas. A temple had two chief administrators. One, the en or chief priest, oversaw all sacred and religious duties of all the priests and priestesses. His or her job was to please the gods, to divine their will and communicate it to the ruler and the people. He supervised scores of other priests in performing sacred duties. These priests had many tasks; some cared for the gods by feeding and clothing them, others sang, made music and wrote hymns, and others still provided religious services to the people. Different types of priests performed purifications, exorcisms, treated people medically and prayed with them. 
-
-
-             </p>
-             <div className="br"></div>
-             <div className="title">
-               <h5 >Upper/Middle class</h5>
-             </div>
-             <div className="br"></div>
-             <p className="content">
-             <img src={require("./upperclass.jpg")} />
-
-             The upper classes of ancient Mesopotamia included kings and their families, priests and priestesses, ranking military officers, scribes and wealthier merchants and traders. The hereditary noble class were the kings, land-owning families and priests and priestesses and their families. Keep in mind that ancient Mesopotamia’s history stretches over 3000 years and includes many cultures: Sumerians, Akkadians, Babylonians and Assyrians. We can discuss these groups as one general culture as they all lived in the lands we call Mesopotamia and were very similar. The middle class have access to lower level of things of the culture such as iron, and cheap silk. They are not allowed to have slaves as they are not upper class.
-             </p>
-             <div className="br"></div>
-             <div className="title">
-               <h5 >Slaves/Farmers</h5>
-             </div>
-             <div className="br"></div>
-             <p className="content">
-             <img src={require("./labour.jfif")} />
-
-             The slaves are controlled by kings, priests, goverment officals, and upper class mostly captured from neighboring citys or commited crimes.
-             Slaves were bought and sold in the market and branded. They worked in irrigation projects, temples and palaces. In the Babylonian period, enslavement for debt was illegal.
-             In fact, farmers could produce a food surplus, or more than they needed. Farmers also used irrigation to water grazing areas for cattle and sheep. As a result, Mesopotamians ate a variety of foods. Fish, meat, wheat, barley, and dates were plentiful.
-             Slaves were bought and sold in the market and branded. They worked in irrigation projects, temples and palaces. In the Babylonian period, enslavement for debt was illegal.
-           </p>
-           </div>
-           
+          <div className="farmRoomDark">
+            <div className="title">
+              <h1>Inventions</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./a.jpg")} />
+              The wheel was made around 4000 BC and was used widely for
+              transportation, in the later game, the wheel was used for other
+              purposes. This invention also helped the already working
+              agriculture to be more responsive and easier to navigate. It could
+              widely move crops at once making it really easy and helpful to the
+              farming agriculture. It could also be good for its expansion, and
+              migration, so that moving becomes easier. Other inventions are
+              also really important, they also invented mathmatics to better
+              calculate time, and others, and weight. They made the first ever
+              times table at the time of 2000 BC. It was the first ever times
+              table to be made on the world. The other inventions they made was
+              writing, it was made to record and list the past, and make rules
+              and notes more accessible. They also invented the first "jobs"
+              which allows the kingdom to become more orgnized and make them all
+              elites and not jack of all trades. So therefore the kingdom could
+              grow faster. Later the inventions included the first ever gold
+              rush and the that gave a chance for all the man to get rich and
+              live happy lives, this also allowed them to move up the social
+              class as long as they had money. They also invented the citites
+              which allowed them to create groups of house and population at a
+              time to make every important and shops and one place making it
+              easier to navigate. They also invented the pottery allowing them
+              to make a lot of fancy items which they can use to sell to others.
+              The plow was also invented to make farming and agriculture more
+              easier by using a Ox they can use the horns and carry it and it
+              makes the farming side more efficient. The maps was also invented
+              for taxtion locations and located tax payers. They also invented
+              the sailboat to make navigation faster and easier by a ton. They
+              also invented advanced irragation systems so that they can work
+              with water ten to billions time easier.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h5>How did the inventions impact the nation</h5>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              Inventions, such as new tools, devices, processes, and medicines,
+              have provided significant benefits to society. Inventions help
+              people around the world live longer, healthier, and
+              more-productive lives and provide new ways to build, move,
+              communicate, heal, learn, and play.
+              <iframe
+                width="800"
+                height="600"
+                src="https://www.youtube-nocookie.com/embed/QgQ-RvCfW7s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
           </div>
-          );
-      }else {
-        return (<h1>asdfasdf</h1>)
-      }
-    }else {
-      return <Navigate to="/login" />
-    }
-}
+        </div>
+      );
+    } else {
+      return (
+        <div className="lo">
+          <div className="farmRoomLight">
+            <div className="title">
+              <h1>Inventions</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./a.jpg")} />
+              The wheel was made around 4000 BC and was used widely for
+              transportation, in the later game, the wheel was used for other
+              purposes. This invention also helped the already working
+              agriculture to be more responsive and easier to navigate. It could
+              widely move crops at once making it really easy and helpful to the
+              farming agriculture. It could also be good for its expansion, and
+              migration, so that moving becomes easier. Other inventions are
+              also really important, they also invented mathmatics to better
+              calculate time, and others, and weight. They made the first ever
+              times table at the time of 2000 BC. It was the first ever times
+              table to be made on the world. The other inventions they made was
+              writing, it was made to record and list the past, and make rules
+              and notes more accessible. They also invented the first "jobs"
+              which allows the kingdom to become more orgnized and make them all
+              elites and not jack of all trades. So therefore the kingdom could
+              grow faster. Later the inventions included the first ever gold
+              rush and the that gave a chance for all the man to get rich and
+              live happy lives, this also allowed them to move up the social
+              class as long as they had money. They also invented the citites
+              which allowed them to create groups of house and population at a
+              time to make every important and shops and one place making it
+              easier to navigate. They also invented the pottery allowing them
+              to make a lot of fancy items which they can use to sell to others.
+              The plow was also invented to make farming and agriculture more
+              easier by using a Ox they can use the horns and carry it and it
+              makes the farming side more efficient. The maps was also invented
+              for taxtion locations and located tax payers. They also invented
+              the sailboat to make navigation faster and easier by a ton. They
+              also invented advanced irragation systems so that they can work
+              with water ten to billions time easier.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h5>How did the inventions impact the nation</h5>
+            </div>
+            <div className="br"></div>
 
+            <p className="content">
+              Inventions, such as new tools, devices, processes, and medicines,
+              have provided significant benefits to society. Inventions help
+              people around the world live longer, healthier, and
+              more-productive lives and provide new ways to build, move,
+              communicate, heal, learn, and play.
+              <iframe
+                width="800"
+                height="600"
+                src="https://www.youtube-nocookie.com/embed/QgQ-RvCfW7s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </div>
+        </div>
+      );
+    }
+  } else {
+    return <Navigate to="/login" />;
+  }
+};
+function SocialClass({ isDark }) {
+  const [isLoggedIn, setisLoggedIn] = useState("");
+  useEffect(() => {
+    setisLoggedIn(data);
+    console.log(data);
+  }, []);
+  const data = sessionStorage.getItem("isLoggedIn");
+
+  if (data === "true") {
+    if (isDark === true) {
+      return (
+        <div className="lo">
+          <div className="farmRoomDark">
+            <div className="title">
+              <h1>Social Class</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              The social class for the mesopotamia is something that is very
+              interesting. Because the Mesopotamia has many population. This
+              made them making roles​ here is the social class, on the top we
+              have a king,
+              <img src={require("./social class.jpg")} />
+              beneath it we have the Goverment officals/Military officals and
+              the priests. They are used to advice the king and keep the
+              enviorment clean and consise. Below it we have the scribes, and
+              merchants and artisans, they are also called the upper and middle
+              class. Below that we have the farmers/slaves, the slaves are
+              captured from neighboring cities and they are all given the golden
+              opputuninty to work there way up the social class. Thye believe
+              that the city, land and social class has to deal with God and so
+              the king, goverment officals, priests, scribes, merchants,
+              farmers, and slaves was believd to be seeked and chosed by god.
+              This is a way to manage the people and is able to manage and
+              control peoples roles to further produce and advance more into the
+              future. Althrough many people have fought and complained about
+              this rule, the rule has still been respected since this is still
+              agreed by the king and dynasty as one of the worth it choices, So
+              they decided to keep this rule. The priests are also used to
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>King</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              The king is super rare and is chosen by gift from the gods and the
+              king was therefore divinely chosen. The king has access to
+              everything including the priests, and goverment officals. it also
+              is can declare war if its really needed and only for peace at most
+              times.
+              <img src={require("./king.jpeg")} />
+              They also do important jobs. They also help prey and feed food to
+              there gods. Common Mesopotamians considered the king as the
+              representative of the city’s patron god, the god’s overseer on
+              earth, so to speak. A king was expected to protect his city, to
+              provide law, order and justice and to be a shepherd to the people,
+              ensuring that widows and orphans were cared for. Kings formed
+              dynasties and leadership passed from father to son. Women, in
+              general, were not involved in politics, but there are instances of
+              women ruling a city.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>Priests/Goverment officals</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./preists.jpg")} />
+              The priests/goverment officals were equals to the king in power
+              and honor. They were mediators between the gods and the people.
+              Ordinary Mesopotamians looked to the priesthood to gain the favor
+              of the gods, especially the patron god or goddess of their city.
+              Mesopotamian Priests and priestesses had many duties and
+              responsibilities, and in exchange they received respect, honor and
+              creature comforts. Each city was organized around the god’s
+              temple, which was a complex of buildings including the temple
+              proper, chambers for the Mesopotamian priests and priestesses,
+              workshops and public areas. A temple had two chief administrators.
+              One, the en or chief priest, oversaw all sacred and religious
+              duties of all the priests and priestesses. His or her job was to
+              please the gods, to divine their will and communicate it to the
+              ruler and the people. He supervised scores of other priests in
+              performing sacred duties. These priests had many tasks; some cared
+              for the gods by feeding and clothing them, others sang, made music
+              and wrote hymns, and others still provided religious services to
+              the people. Different types of priests performed purifications,
+              exorcisms, treated people medically and prayed with them.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h5>Upper/Middle class</h5>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./upperclass.jpg")} />
+              The upper classes of ancient Mesopotamia included kings and their
+              families, priests and priestesses, ranking military officers,
+              scribes and wealthier merchants and traders. The hereditary noble
+              class were the kings, land-owning families and priests and
+              priestesses and their families. Keep in mind that ancient
+              Mesopotamia’s history stretches over 3000 years and includes many
+              cultures: Sumerians, Akkadians, Babylonians and Assyrians. We can
+              discuss these groups as one general culture as they all lived in
+              the lands we call Mesopotamia and were very similar. The middle
+              class have access to lower level of things of the culture such as
+              iron, and cheap silk. They are not allowed to have slaves as they
+              are not upper class.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h5>Slaves/Farmers</h5>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./labour.jfif")} />
+              The slaves are controlled by kings, priests, goverment officals,
+              and upper class mostly captured from neighboring citys or commited
+              crimes. Slaves were bought and sold in the market and branded.
+              They worked in irrigation projects, temples and palaces. In the
+              Babylonian period, enslavement for debt was illegal. In fact,
+              farmers could produce a food surplus, or more than they needed.
+              Farmers also used irrigation to water grazing areas for cattle and
+              sheep. As a result, Mesopotamians ate a variety of foods. Fish,
+              meat, wheat, barley, and dates were plentiful. Slaves were bought
+              and sold in the market and branded. They worked in irrigation
+              projects, temples and palaces. In the Babylonian period,
+              enslavement for debt was illegal.
+            </p>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="lo">
+          <div className="farmRoomLight">
+            <div className="title">
+              <h1>Social Class</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              The social class for the mesopotamia is something that is very
+              interesting. Because the Mesopotamia has many population. This
+              made them making roles​ here is the social class, on the top we
+              have a king,
+              <img src={require("./social class.jpg")} />
+              beneath it we have the Goverment officals/Military officals and
+              the priests. They are used to advice the king and keep the
+              enviorment clean and consise. Below it we have the scribes, and
+              merchants and artisans, they are also called the upper and middle
+              class. Below that we have the farmers/slaves, the slaves are
+              captured from neighboring cities and they are all given the golden
+              opputuninty to work there way up the social class. Thye believe
+              that the city, land and social class has to deal with God and so
+              the king, goverment officals, priests, scribes, merchants,
+              farmers, and slaves was believd to be seeked and chosed by god.
+              This is a way to manage the people and is able to manage and
+              control peoples roles to further produce and advance more into the
+              future. Althrough many people have fought and complained about
+              this rule, the rule has still been respected since this is still
+              agreed by the king and dynasty as one of the worth it choices, So
+              they decided to keep this rule. The priests are also used to
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>King</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              The king is super rare and is chosen by gift from the gods and the
+              king was therefore divinely chosen. The king has access to
+              everything including the priests, and goverment officals. it also
+              is can declare war if its really needed and only for peace at most
+              times.
+              <img src={require("./king.jpeg")} />
+              They also do important jobs. They also help prey and feed food to
+              there gods. Common Mesopotamians considered the king as the
+              representative of the city’s patron god, the god’s overseer on
+              earth, so to speak. A king was expected to protect his city, to
+              provide law, order and justice and to be a shepherd to the people,
+              ensuring that widows and orphans were cared for. Kings formed
+              dynasties and leadership passed from father to son. Women, in
+              general, were not involved in politics, but there are instances of
+              women ruling a city.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>Priests/Goverment officals</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./preists.jpg")} />
+              The priests/goverment officals were equals to the king in power
+              and honor. They were mediators between the gods and the people.
+              Ordinary Mesopotamians looked to the priesthood to gain the favor
+              of the gods, especially the patron god or goddess of their city.
+              Mesopotamian Priests and priestesses had many duties and
+              responsibilities, and in exchange they received respect, honor and
+              creature comforts. Each city was organized around the god’s
+              temple, which was a complex of buildings including the temple
+              proper, chambers for the Mesopotamian priests and priestesses,
+              workshops and public areas. A temple had two chief administrators.
+              One, the en or chief priest, oversaw all sacred and religious
+              duties of all the priests and priestesses. His or her job was to
+              please the gods, to divine their will and communicate it to the
+              ruler and the people. He supervised scores of other priests in
+              performing sacred duties. These priests had many tasks; some cared
+              for the gods by feeding and clothing them, others sang, made music
+              and wrote hymns, and others still provided religious services to
+              the people. Different types of priests performed purifications,
+              exorcisms, treated people medically and prayed with them.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h5>Upper/Middle class</h5>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./upperclass.jpg")} />
+              The upper classes of ancient Mesopotamia included kings and their
+              families, priests and priestesses, ranking military officers,
+              scribes and wealthier merchants and traders. The hereditary noble
+              class were the kings, land-owning families and priests and
+              priestesses and their families. Keep in mind that ancient
+              Mesopotamia’s history stretches over 3000 years and includes many
+              cultures: Sumerians, Akkadians, Babylonians and Assyrians. We can
+              discuss these groups as one general culture as they all lived in
+              the lands we call Mesopotamia and were very similar. The middle
+              class have access to lower level of things of the culture such as
+              iron, and cheap silk. They are not allowed to have slaves as they
+              are not upper class.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h5>Slaves/Farmers</h5>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./labour.jfif")} />
+              The slaves are controlled by kings, priests, goverment officals,
+              and upper class mostly captured from neighboring citys or commited
+              crimes. Slaves were bought and sold in the market and branded.
+              They worked in irrigation projects, temples and palaces. In the
+              Babylonian period, enslavement for debt was illegal. In fact,
+              farmers could produce a food surplus, or more than they needed.
+              Farmers also used irrigation to water grazing areas for cattle and
+              sheep. As a result, Mesopotamians ate a variety of foods. Fish,
+              meat, wheat, barley, and dates were plentiful. Slaves were bought
+              and sold in the market and branded. They worked in irrigation
+              projects, temples and palaces. In the Babylonian period,
+              enslavement for debt was illegal.
+            </p>
+          </div>
+        </div>
+      );
+    }
+  } else {
+    return <Navigate to="/login" />;
+  }
+}
+const Cuniform = ({ isDark }) => {
+  const [isLoggedIn, setisLoggedIn] = useState("");
+  useEffect(() => {
+    setisLoggedIn(data);
+    console.log(data);
+  }, []);
+  const data = sessionStorage.getItem("isLoggedIn");
+
+  if (data === "true") {
+    if (isDark === true) {
+      return (
+        <div className="lo">
+          <div className="farmRoomDark">
+            <div className="title">
+              <h1>Cuniform</h1>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./asd.jpg")} />
+              Earliest times they invented the cuneiform or a ancient writing
+              system used to record and pass down messages to both the future
+              and other people. The writing was write on a clay tablet. It was
+              invented by 3000BCE and was the representations were more
+              simplified and the strokes of the stylus conveyed wood-concepts
+              rather then word signs. this type was also used to do math and
+              create math to used to type and print math. The great innovation
+              of this leaded to more productive ciliation providing laws,
+              records, and history. It was also used to create laws and
+              communicate with others. This made both trading and mailing much
+              more easier. Though after writing it started to help with writing
+              math. It is used to do the basic of basic calculations.The third
+              script of the Achaemenian trilinguals had in the meantime been
+              identified with that of the texts found in very large numbers in
+              Mesopotamia, which obviously contained the central language of
+              cuneiform culture, namely Akkadian. Here also the proper names
+              provided the first concrete clues for a decipherment, but the
+              extreme variety of signs and the peculiar complications of the
+              system raised difficulties which for a time seemed insurmountable.
+              The serious external divergencies between older and newer types of
+              Akkadian cuneiform, the distribution of ideographic and syllabic
+              uses of the signs, the simple and complex values of the syllables,
+              and especially the bewildering polyphony of many notations were
+              only gradually surmised by scholars. Once the Semitic character of
+              the language had been established, the philological science of
+              Assyriology developed rapidly from the closing decades of the 19th
+              century onward, especially because of scholars like Friedrich
+              Delitzsch and, later, Benno Landsberger and Wolfram von Soden.
+            </p>
+            <div className="br"></div>
+            <div className="title">
+              <h6>Math</h6>
+            </div>
+            <div className="br"></div>
+            <p className="content">
+              <img src={require("./1.jfif")} />
+              Babylonian mathematics is a range of numeric and more advanced
+              mathematical practices in the ancient Near East, written in
+              cuneiform script. Study has historically focused on the Old
+              Babylonian period in the early second millennium BC due to the
+              wealth of data available. There has been debate over the earliest
+              appearance of Babylonian mathematics, with historians suggesting a
+              range of dates between the 5th and 3rd millennia BC. Babylonian
+              mathematics was primarily written on clay tablets in cuneiform
+              script in the Akkadian or Sumerian languages. "Babylonian
+              mathematics" is perhaps an unhelpful term since the earliest
+              suggested origins date to the use of accounting devices, such as
+              bullae and tokens, in the 5th millennium BC. The Mesopotamians are
+              credited with inventing mathematics. The people of Mesopotamia
+              developed mathematics about 5,000 years ago. Early mathematics was
+              essentially a form of counting, and was used to count things like
+              sheep, crops and exchanged goods. Later it was used to solve more
+              sophisticated problems related to irrigation and perhaps
+              architecture. By the Late Babylonian period was used to solve
+              complicated astrological and geometrical problems.The considerable
+              mathematical knowledge of the Babylonians was uncovered by the
+              Austrian mathematician Otto E. Neugebauer, who died in 1990.
+              Scholars since then have turned to the task of understanding how
+              the knowledge was used. The archaeological collections at
+              Columbia, Yale and the University of Pennsylvania have offered
+              insights into this issue. Kenneth Chang wrote in the New York
+              Times: “Early Babylonian mathematicians who lived between 1800
+              B.C. and 1600 B.C. had figured out, for example, how to calculate
+              the area of a trapezoid, and even how to divide a trapezoid into
+              two smaller trapezoids of equal area. For the most part,
+              Babylonians used their mathematical skills for mundane
+              calculations, like figuring out the size of a plot of land. But on
+              some tablets from the later Babylonian period, there appear to be
+              some trapezoid calculations related to astronomical
+              observations.In the 1950s, an Austrian-American mathematician and
+              science historian, Otto E. Neugebauer, described two of them.”
+              [Source: Kenneth Chang , New York Times, January 28, 2016]
+            </p>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="lo">
+          <div className="farmRoomLight">
+            <div className="title">
+              <h1>Social Class</h1>
+            </div>
+            Earliest times they invented the cuneiform or a ancient writing
+            system used to record and pass down messages to both the future and
+            other people. The writing was write on a clay tablet. It was
+            invented by 3000BCE and was the representations were more simplified
+            and the strokes of the stylus conveyed wood-concepts rather then
+            word signs. this type was also used to do math and create math to
+            used to type and print math. The great innovation of this leaded to
+            more productive ciliation providing laws, records, and history. It
+            was also used to create laws and communicate with others. This made
+            both trading and mailing much more easier. Though after writing it
+            started to help with writing math. It is used to do the basic of
+            basic calculations.The third script of the Achaemenian trilinguals
+            had in the meantime been identified with that of the texts found in
+            very large numbers in Mesopotamia, which obviously contained the
+            central language of cuneiform culture, namely Akkadian. Here also
+            the proper names provided the first concrete clues for a
+            decipherment, but the extreme variety of signs and the peculiar
+            complications of the system raised difficulties which for a time
+            seemed insurmountable. The serious external divergencies between
+            older and newer types of Akkadian cuneiform, the distribution of
+            ideographic and syllabic uses of the signs, the simple and complex
+            values of the syllables, and especially the bewildering polyphony of
+            many notations were only gradually surmised by scholars. Once the
+            Semitic character of the language had been established, the
+            philological science of Assyriology developed rapidly from the
+            closing decades of the 19th century onward, especially because of
+            scholars like Friedrich Delitzsch and, later, Benno Landsberger and
+            Wolfram von Soden.
+          </div>
+        </div>
+      );
+    }
+  } else {
+    return <Navigate to="/login" />;
+  }
+};
 function App() {
   const [IsDark, setIsDark] = useState(true);
   const [IsSetDark, setIsSetDark] = useState("Dark");
@@ -508,6 +961,7 @@ function App() {
             <Nav.Link href="/farming">Farming</Nav.Link>
             <Nav.Link href="/military">Military</Nav.Link>
             <Nav.Link href="/socialclass">Social Class</Nav.Link>
+            <Nav.Link href="/inventions">Inventions</Nav.Link>
           </Nav>
           <Nav className="d-flex">
             <button onClick={() => setDark(IsDark, setIsDark, setIsSetDark)}>
@@ -519,13 +973,15 @@ function App() {
 
       <Routes>
         <Route path="login" element={<LoginPage />} />
+        <Route path="/cuniform" element={<Cuniform isDark={IsDark} />} />
+
         <Route path="/farming" element={<Farming isLightMode={IsDark} />} />
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History isDark={IsDark} />} />
         <Route path="/military" element={<Military isDark={IsDark} />} />
         <Route path="*" element={<Error />} />
-        <Route path="/socialclass" element={<SocialClass isDark={IsDark}/>} />
-      
+        <Route path="/inventions" element={<Inventions isDark={IsDark} />} />
+        <Route path="/socialclass" element={<SocialClass isDark={IsDark} />} />
       </Routes>
     </div>
   );
