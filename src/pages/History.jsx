@@ -55,7 +55,7 @@ function History({ isDark }) {
       );
     }
   } else {
-    return <Navigate to="/kevinmesopotamia/login" />;
+    return <Navigate to="/login" />;
   }
 }
 

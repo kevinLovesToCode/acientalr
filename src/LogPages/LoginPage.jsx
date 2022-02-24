@@ -30,7 +30,7 @@ function LoginPage() {
                 console.log("LOGGED INT");
 
                 setisLoggedIn(true);
-                navigate("/kevinmesopotamia/");
+                navigate("/");
               } else {
                 alert("Wrong Password!");
               }

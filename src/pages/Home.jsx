@@ -16,13 +16,13 @@ function Home() {
         <div className="title">
           <h1>Acient Mesopotamia</h1>
           <button>
-            <a href="/kevinmesopotamia/history">Get Started</a>
+            <a href="/history">Get Started</a>
           </button>
         </div>
       </div>
     );
   } else {
-    return <Navigate to="/kevinmesopotamia/login" />;
+    return <Navigate to="/login" />;
   }
 }
 
